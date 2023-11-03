@@ -142,6 +142,10 @@ You can turn the secure mode on or off via call ```enableSecureMode()``` and ```
 
 ## Change Log
 
+
+### 0.4.1 (2023-11-02)
+* make internal configuration variables public. Values that can be set from XML can now we changed at runtime.
+
 ### 0.4.0 (2023-10-04)
 * ignore touch events when PatternLockView is disabled
 

@@ -47,23 +47,23 @@ class PatternLockView : GridLayout {
         const val LINE_STYLE_INDICATOR = 2
     }
 
-    private var regularCellBackground: Drawable? = null
-    private var regularDotColor: Int = 0
-    private var regularDotRadiusRatio: Float = 0f
+    var regularCellBackground: Drawable? = null
+    var regularDotColor: Int = 0
+    var regularDotRadiusRatio: Float = 0f
 
-    private var selectedCellBackground: Drawable? = null
-    private var selectedDotColor: Int = 0
-    private var selectedDotRadiusRatio: Float = 0f
+    var selectedCellBackground: Drawable? = null
+    var selectedDotColor: Int = 0
+    var selectedDotRadiusRatio: Float = 0f
 
-    private var errorCellBackground: Drawable? = null
-    private var errorDotColor: Int = 0
-    private var errorDotRadiusRatio: Float = 0f
+    var errorCellBackground: Drawable? = null
+    var errorDotColor: Int = 0
+    var errorDotRadiusRatio: Float = 0f
 
-    private var successCellBackground: Drawable? = null
-    private var successDotColor: Int = 0
-    private var successDotRadiusRatio: Float = 0f
+    var successCellBackground: Drawable? = null
+    var successDotColor: Int = 0
+    var successDotRadiusRatio: Float = 0f
 
-    private var autoResetEnabled: Boolean = DEFAULT_AUTO_RESET
+    var autoResetEnabled: Boolean = DEFAULT_AUTO_RESET
 
     /**
      * determine the line's style
@@ -71,22 +71,22 @@ class PatternLockView : GridLayout {
      * with indicator: 2
      * invisible: 3
      */
-    private var lineStyle: Int = 0
+    var lineStyle: Int = 0
 
-    private var lineWidth: Int = 0
-    private var regularLineColor: Int = 0
-    private var errorLineColor: Int = 0
-    private var successLineColor: Int = 0
+    var lineWidth: Int = 0
+    var regularLineColor: Int = 0
+    var errorLineColor: Int = 0
+    var successLineColor: Int = 0
 
-    private var spacing: Int = 0
+    var spacing: Int = 0
 
     private var plvRowCount: Int = 0
     private var plvColumnCount: Int = 0
 
-    private var errorDuration: Int = 0
-    private var successDuration: Int = 0
-    private var hitAreaPaddingRatio: Float = 0f
-    private var indicatorSizeRatio: Float = 0f
+    var errorDuration: Int = 0
+    var successDuration: Int = 0
+    var hitAreaPaddingRatio: Float = 0f
+    var indicatorSizeRatio: Float = 0f
 
     private var cells: ArrayList<Cell> = ArrayList()
     private var selectedCells: ArrayList<Cell> = ArrayList()
@@ -375,10 +375,6 @@ class PatternLockView : GridLayout {
 
     fun setOnPatternListener(listener: OnPatternListener) {
         onPatternListener = listener
-    }
-
-    fun setAutoResetEnabled(enabled: Boolean) {
-        autoResetEnabled = enabled
     }
 
     fun getSelectedIds(): ArrayList<Int> {
